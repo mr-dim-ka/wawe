@@ -126,10 +126,38 @@
 	}
 }
 
-
-
-
 //====================================================
+
+.about {
+	padding: 180px 0;
+
+	// .about__title
+
+	&__title {
+		margin-bottom: 100px;
+	}
+
+	// .about__items
+
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 -10px;
+	}
+
+	// .about__item
+
+	&__item {
+		flex: 0 1 500px;
+		padding: 0 10px;
+	}
+
+	// .about__item-text
+
+	&__item-text {
+		margin-bottom: 30px;
+	}
+}
 
 //====================================================
 @import "_media";
