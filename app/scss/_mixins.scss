@@ -9,3 +9,10 @@
 		font-style: #{$style};
 	}
 }
+
+@mixin roboto {
+	font-family: "Roboto Condensed", sans-serif;
+}
+@mixin raleway {
+	font-family: "Raleway", sans-serif;
+}

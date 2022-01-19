@@ -24,7 +24,12 @@ li {
 	padding: 0;
 	// display: inline-block;
 }
-body {	
+body {
+	font-family: "Roboto Condensed", sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	color: $color-text;
 }
 .wrapper {
 	display: flex;
@@ -38,7 +43,7 @@ body {
 	flex: 0 0 auto;
 }
 .container {
-	max-width: 1200px;
+	max-width: 1230px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
