@@ -427,6 +427,7 @@ body {
   font-weight: 600;
   font-size: 48px;
   line-height: 116.6666666667%;
+  text-transform: uppercase;
   letter-spacing: 0.6px;
   color: #01353E;
   text-align: center;
@@ -662,6 +663,28 @@ body {
 }
 
 .get__text p {
+  margin-bottom: 30px;
+}
+
+.vertex {
+  padding: 200px 0 300px;
+  background-image: url("../images/vertex-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 50%;
+}
+
+.vertex__title {
+  margin-bottom: 100px;
+  -moz-text-align-last: left;
+       text-align-last: left;
+}
+
+.vertex__text {
+  max-width: 510px;
+}
+
+.vertex__text p {
   margin-bottom: 30px;
 }
 

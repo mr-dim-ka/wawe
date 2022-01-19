@@ -274,6 +274,37 @@
 
 //====================================================
 
+.vertex {
+	padding: 200px 0 300px;
+	background-image: url("../images/vertex-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-size: 50%;
+
+	// .vertex__inner
+
+	&__inner {
+	}
+
+	// .vertex__title
+
+	&__title {
+		margin-bottom: 100px;
+		text-align-last: left;
+	}
+
+	// .vertex__text
+
+	&__text {
+		max-width: 510px;
+		p {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+//====================================================
+
 //====================================================
 @import "_media";
 //====================================================
