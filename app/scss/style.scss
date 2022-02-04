@@ -553,6 +553,60 @@
 
 //====================================================
 
+.team {
+	padding-bottom: 200px;
+
+	// .team__title
+
+	&__title {
+		margin: 180px;
+	}
+
+	// .team__items
+
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 -10px;
+	}
+
+	// .team__item
+
+	&__item {
+		padding: 0 10px;
+		flex: 0 1 330px;
+		text-align: center;
+	}
+
+	// .team__item-images
+
+	&__item-images {
+		margin-bottom: 25px;
+	}
+
+	// .team__item-img
+
+	&__item-img {
+	}
+
+	// .team__item-name
+
+	&__item-name {
+		margin-bottom: 5px;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: calc(18 / 18 * 100%);
+	}
+
+	// .team__item-position
+
+	&__item-position {
+		font-weight: 400;
+	}
+}
+
+//====================================================
+
 //====================================================
 @import "_media";
 //====================================================

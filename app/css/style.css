@@ -1775,6 +1775,47 @@ body {
   color: #fff;
 }
 
+.team {
+  padding-bottom: 200px;
+}
+
+.team__title {
+  margin: 180px;
+}
+
+.team__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -10px;
+}
+
+.team__item {
+  padding: 0 10px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 330px;
+          flex: 0 1 330px;
+  text-align: center;
+}
+
+.team__item-images {
+  margin-bottom: 25px;
+}
+
+.team__item-name {
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.team__item-position {
+  font-weight: 400;
+}
+
 @media (max-width: 720px) {
   .container-fluid {
     padding: 0 15px;
