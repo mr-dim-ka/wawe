@@ -607,6 +607,77 @@
 
 //====================================================
 
+.packages {
+	padding: 200px 0;
+	background-color: #f8f8f8;
+
+	// .packages__title
+
+	&__title {
+		margin-bottom: 180px;
+	}
+
+	// .packages__items
+
+	&__items {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	ul.packages__item {
+		flex: 0 1 360px;
+		padding: 45px 30px;
+		background-color: #fff;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		li {
+			font-weight: 400;
+			margin-bottom: 20px;
+
+			&:first-child {
+				margin-bottom: 60px;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	// .packages__item-name
+
+	&__item-name {
+		font-weight: 400;
+		font-size: 36px;
+		line-height: calc(40 / 36 * 100%);
+		color: $color-title;
+		align-self: center;
+	}
+
+	// .packages__item-sum
+
+	&__item-sum {
+		text-align: center;
+		font-weight: 400;
+		font-size: 36px;
+		line-height: calc(40 / 36 * 100%);
+		color: $color-title;
+		padding-right: 5px;
+		padding-top: 60px;
+		align-self: center;
+		margin: auto 0;
+
+		sup {
+			font-size: 18px;
+			line-height: calc(22 / 18 * 100%);
+		}
+	}
+}
+
+//====================================================
+
 //====================================================
 @import "_media";
 //====================================================
