@@ -1708,6 +1708,73 @@ body {
   line-height: 128.5714285714%;
 }
 
+.blog {
+  padding-bottom: 200px;
+}
+
+.blog__title {
+  margin-bottom: 200px;
+}
+
+.blog__slider {
+  background-image: url("../images/slider-blog-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  min-height: 800px;
+}
+
+.blog__slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 240px;
+  padding-bottom: 20px;
+}
+
+.blog__slider .slick-dots li {
+  margin: 0 8px;
+}
+
+.blog__slider .slick-dots button {
+  font-size: 0;
+  outline: none;
+  border: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.blog__slider .slick-dots .slick-active button {
+  background-color: #00B2A0;
+}
+
+.slider-blog__item {
+  max-width: 600px;
+  display: block !important;
+  margin-left: auto;
+  margin-top: 350px;
+}
+
+.slider-blog__item-title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 116.6666666667%;
+  color: #fff;
+}
+
+.slider-blog__item-descr {
+  color: #fff;
+}
+
 @media (max-width: 720px) {
   .container-fluid {
     padding: 0 15px;

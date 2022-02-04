@@ -470,7 +470,88 @@
 
 //====================================================
 
+.blog {
+	padding-bottom: 200px;
 
+	// .blog__title
+
+	&__title {
+		margin-bottom: 200px;
+	}
+
+	// .blog__slider
+
+	&__slider {
+		background-image: url("../images/slider-blog-bg.jpg");
+		background-repeat: no-repeat;
+		background-position: bottom center;
+		background-size: cover;
+		min-height: 800px;
+
+		.slick-dots {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 240px;
+			padding-bottom: 20px;
+
+			li {
+				margin: 0 8px;
+			}
+
+			button {
+				font-size: 0;
+				outline: none;
+				border: 0;
+				width: 15px;
+				height: 15px;
+				border-radius: 50%;
+				background-color: #fff;
+				cursor: pointer;
+			}
+			.slick-active button {
+				background-color: $green;
+			}
+		}
+	}
+}
+.slider-blog {
+	// .slider-blog__inner
+
+	&__inner {
+	}
+
+	// .slider-blog__item
+
+	&__item {
+		max-width: 600px;
+		display: block !important;
+		margin-left: auto;
+		margin-top: 350px;
+	}
+
+	// .slider-blog__item-link
+
+	&__item-link {
+	}
+
+	// .slider-blog__item-title
+
+	&__item-title {
+		font-weight: 400;
+		font-size: 48px;
+		line-height: calc(56 / 48 * 100%);
+		color: #fff;
+	}
+
+	// .slider-blog__item-descr
+
+	&__item-descr {
+		color: #fff;
+	}
+}
+
+//====================================================
 
 //====================================================
 @import "_media";
