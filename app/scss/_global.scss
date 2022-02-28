@@ -45,7 +45,7 @@ body {
 	flex: 0 0 auto;
 }
 .container {
-	max-width: 1230px;
+	max-width: $maxWidthContainer + px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
@@ -62,7 +62,7 @@ body {
 .title {
 	@include raleway;
 	font-weight: 600;
-	font-size: 48px;
+	@include adaptiv-value("font-size", 48, 20, 0);
 	line-height: calc(56 / 48 * 100%);
 	text-transform: uppercase;
 	letter-spacing: 0.6px;
@@ -71,12 +71,17 @@ body {
 	position: relative;
 
 	&::after {
-		content: '/';
+		content: "/";
 		position: absolute;
 		top: 20px;
 		color: $green;
 	}
 }
+
+// section.section {
+// 	@include adaptiv-value("padding-top", 200, 45, 0);
+// 	@include adaptiv-value("padding-bottom", 200, 45, 0);
+// }
 
 // .breadcrumbs {
 // 	&__inner {

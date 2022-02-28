@@ -5,7 +5,7 @@
 @import "_reset";
 @import "_global";
 
-//====================================================
+//========================================================================================
 
 .header {
 	min-height: 100vh;
@@ -134,15 +134,16 @@
 	}
 }
 
-//====================================================
+//========================================================================================
 
 .about {
-	padding: 180px 0;
+	@include adaptiv-value("padding-top", 180, 45, 0);
+	@include adaptiv-value("padding-bottom", 180, 45, 0);
 
 	// .about__title
 
 	&__title {
-		margin-bottom: 100px;
+		@include adaptiv-value("margin-bottom", 100, 30, 0);
 	}
 
 	// .about__items
@@ -167,16 +168,17 @@
 	}
 }
 
-//====================================================
+//========================================================================================
 
 .get {
-	padding: 180px 0;
+	@include adaptiv-value("padding-top", 180, 45, 0);
+	@include adaptiv-value("padding-bottom", 180, 45, 0);
 	background-color: #f8f8f8;
 
 	// .get__title
 
 	&__title {
-		margin-bottom: 100px;
+		@include adaptiv-value("margin-bottom", 100, 30, 0);
 	}
 
 	// .get__items
@@ -282,10 +284,11 @@
 	}
 }
 
-//====================================================
+//========================================================================================
 
 .vertex {
-	padding: 200px 0 300px;
+	@include adaptiv-value("padding-top", 200, 45, 0);
+	@include adaptiv-value("padding-bottom", 300, 45, 0);
 	background-image: url("../images/vertex-bg.jpg");
 	background-repeat: no-repeat;
 	background-position: top right;
@@ -299,7 +302,7 @@
 	// .vertex__title
 
 	&__title {
-		margin-bottom: 100px;
+		@include adaptiv-value("margin-bottom", 100, 30, 0);
 		text-align-last: left;
 	}
 
@@ -313,15 +316,15 @@
 	}
 }
 
-//====================================================
+//========================================================================================
 
 .gallery {
-	padding-bottom: 200px;
+	@include adaptiv-value("padding-bottom", 200, 45, 0);
 
 	// .gallery__title
 
 	&__title {
-		margin-bottom: 210px;
+		@include adaptiv-value("margin-bottom", 210, 50, 0);
 	}
 
 	// .gallery__filter-btn
@@ -482,15 +485,15 @@
 	}
 }
 
-//====================================================
+//========================================================================================
 
 .blog {
-	padding-bottom: 200px;
+	@include adaptiv-value("padding-bottom", 200, 45, 0);
 
 	// .blog__title
 
 	&__title {
-		margin-bottom: 200px;
+		@include adaptiv-value("margin-bottom", 200, 50, 0);
 	}
 
 	// .blog__slider
@@ -565,15 +568,15 @@
 	}
 }
 
-//====================================================
+//========================================================================================
 
 .team {
-	padding-bottom: 200px;
+	@include adaptiv-value("padding-bottom", 200, 45, 0);
 
 	// .team__title
 
 	&__title {
-		margin: 180px;
+		@include adaptiv-value("margin-bottom", 180, 40, 0);
 	}
 
 	// .team__items
@@ -619,16 +622,17 @@
 	}
 }
 
-//====================================================
+//========================================================================================
 
 .packages {
-	padding: 200px 0;
+	@include adaptiv-value("padding-top", 200, 45, 0);
+	@include adaptiv-value("padding-bottom", 200, 45, 0);
 	background-color: #f8f8f8;
 
 	// .packages__title
 
 	&__title {
-		margin-bottom: 180px;
+		@include adaptiv-value("margin-bottom", 180, 40, 0);
 	}
 
 	// .packages__items
@@ -690,7 +694,7 @@
 	}
 }
 
-//====================================================
+//========================================================================================
 
 .map {
 	// .map__images
@@ -705,15 +709,15 @@
 	}
 }
 
-//====================================================
+//========================================================================================
 
 .connection {
-	padding-bottom: 200px;
+	@include adaptiv-value("padding-bottom", 200, 45, 0);
 
 	// .connection__title
 
 	&__title {
-		margin-bottom: 200px;
+		@include adaptiv-value("margin-bottom", 200, 50, 0);
 	}
 
 	// .connection__info
@@ -851,11 +855,12 @@
 	}
 }
 
-//====================================================
+//========================================================================================
 
 .footer {
 	background-color: $green;
-	padding: 70px 0;
+	@include adaptiv-value("padding-top", 70, 15, 0);
+	@include adaptiv-value("padding-bottom", 70, 15, 0);
 
 	// .footer__logo
 
@@ -870,8 +875,8 @@
 	}
 }
 
-//====================================================
+//========================================================================================
 
-//====================================================
+//========================================================================================
 @import "_media";
-//====================================================
+//========================================================================================
