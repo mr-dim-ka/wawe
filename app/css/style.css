@@ -1313,10 +1313,11 @@ body {
   position: relative;
 }
 
-.title::after {
-  content: "/";
+.title span {
+  display: inline-block;
   position: absolute;
-  top: 20px;
+  font-size: calc(36px + 36 * ((100vw - 320px) / 1600));
+  bottom: calc(-10px + -10 * ((100vw - 320px) / 1600));
   color: #00B2A0;
 }
 
@@ -1573,20 +1574,29 @@ body {
 .vertex {
   padding-top: calc(45px + 155 * ((100vw - 320px) / 1600));
   padding-bottom: calc(45px + 255 * ((100vw - 320px) / 1600));
-  background-image: url("../images/vertex-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 50%;
+}
+
+.vertex__content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.vertex__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .vertex__title {
   margin-bottom: calc(30px + 70 * ((100vw - 320px) / 1600));
-  -moz-text-align-last: left;
-       text-align-last: left;
-}
-
-.vertex__text {
-  max-width: 510px;
+  text-align: left;
 }
 
 .vertex__text p {
@@ -2126,6 +2136,48 @@ body {
   margin: 0 auto;
 }
 
+@media (min-width: 767px) {
+  .vertex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .vertex__body {
+    width: 44.2%;
+    padding: 0 40px 0 0;
+  }
+
+  .vertex__image {
+    position: relative;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc((100vw - 40px) * 0.5 + 20px);
+            flex: 0 0 calc((100vw - 40px) * 0.5 + 20px);
+    padding: 0 0 44.3% 0;
+    -webkit-transform: translate(-100%, 0px);
+        -ms-transform: translate(-100%, 0px);
+            transform: translate(-100%, 0px);
+  }
+
+  .vertex__image img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media (max-width: 1230px) {
+  .vertex__image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(50vw + 69.6px);
+            flex: 0 0 calc(50vw + 69.6px);
+  }
+}
+
 @media (max-width: 830px) {
   body.lock {
     overflow: hidden;
@@ -2285,6 +2337,10 @@ body {
 
   .get__info {
     margin-bottom: 30px;
+  }
+
+  .vertex__title {
+    text-align: center;
   }
 }
 
