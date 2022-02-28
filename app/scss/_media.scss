@@ -1,19 +1,22 @@
+@media (max-width: 1023px) {
+}
+//========================================================================================
 @media (max-width: 830px) {
-	body{
+	body {
 		&.lock {
 			overflow: hidden;
 		}
 	}
-	.header__inner{
+	.header__inner {
 		padding: 20px 0;
 		transition: all 0.5s ease 0s;
 		&.active {
-			background-color: rgba($green, .9);
+			background-color: rgba($green, 0.9);
 			margin: 0 -15px;
 			padding: 10px 15px;
 		}
 	}
-	.logo{
+	.logo {
 		position: relative;
 		z-index: 2;
 	}
@@ -34,7 +37,7 @@
 		}
 		&::before,
 		&::after {
-			content: '';
+			content: "";
 			background-color: #fff;
 			position: absolute;
 			width: 100%;
@@ -49,11 +52,11 @@
 		&::after {
 			bottom: 0;
 		}
-		&.active{
+		&.active {
 			span {
 				transform: scale(0);
 			}
-			&::before{
+			&::before {
 				transform: rotate(45deg);
 				top: 9px;
 			}
@@ -73,27 +76,56 @@
 		overflow: auto;
 		padding-top: 20px;
 		text-align: center;
-		background-color: rgba($color-title, .9);
+		background-color: rgba($color-title, 0.9);
 		transition: all 0.5s ease 0s;
 		&.active {
 			top: 83px;
 		}
 	}
-	.menu__list{
+	.menu__list {
 		margin: 0;
 		display: block;
 	}
-	.menu__list-item+.menu__list-item{
+	.menu__list-item + .menu__list-item {
 		margin: 0;
 	}
-	.menu__list-link{
+	.menu__list-link {
 		padding: 15px 0;
 	}
 }
 //========================================================================================
 @media (max-width: 767px) {
-	.header__title{
+	.header__title {
 		// font-size: 150px;
+	}
+	.get__items {
+		display: block;
+	}
+	.get__item {
+		margin-bottom: 40px;
+	}
+	.get__item-top {
+		flex-direction: column;
+		align-items: center;
+	}
+	.get__item-img{
+		margin-bottom: 20px;
+	}
+	.get__item-title {
+		font-size: 20px;
+	}
+	.get__inner {
+		display: block;
+		margin: 0;
+		& > div {
+			padding: 0;
+		}
+		.get__info {
+			padding-right: 20px;
+		}
+	}
+	.get__info {
+		margin-bottom: 30px;
 	}
 }
 //========================================================================================
@@ -104,16 +136,16 @@
 }
 //========================================================================================
 @media (max-width: 479px) {
-	.header__inner{
+	.header__inner {
 		padding: 10px 0px;
-		
+
 		&.active {
 		}
 	}
 	.header__subtitle {
 		text-align: center;
 	}
-	.header__icon{
+	.header__icon {
 		margin-bottom: 60px;
 	}
 }

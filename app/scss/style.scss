@@ -187,6 +187,7 @@
 		display: flex;
 		margin: 0 -30px;
 		margin-bottom: 100px;
+		@include adaptiv-value("margin-bottom", 100, 40, 0);
 	}
 
 	// .get__item
@@ -231,12 +232,17 @@
 	&__inner {
 		display: flex;
 		justify-content: space-between;
+		margin: 0 -20px;
+
+		& > div {
+			padding: 0 20px;
+		}
 	}
 
 	// .get__info
 
 	&__info {
-		flex: 0 0 350px;
+		flex: 0 1 350px;
 	}
 
 	// .get__info-item
