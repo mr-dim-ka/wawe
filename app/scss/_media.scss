@@ -188,6 +188,15 @@
 	.blockquote__author {
 		margin: 10px auto 0;
 	}
+	.team__items {
+		display: block;
+	}
+	.team__item {
+		margin-bottom: 40px;
+	}
+	.team__item-img {
+		margin: 0 auto;
+	}
 }
 //========================================================================================
 @media (max-width: 480px) {
