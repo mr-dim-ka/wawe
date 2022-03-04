@@ -569,10 +569,12 @@
 			justify-content: center;
 			align-items: center;
 			margin-top: 240px;
-			padding-bottom: 20px;
+			padding-bottom: 50px;
 
 			li {
 				margin: 0 8px;
+				@include adaptiv-value("margin-left", 8, 4, 0);
+				@include adaptiv-value("margin-right", 8, 4, 0);
 			}
 
 			button {
@@ -616,6 +618,7 @@
 	&__item-title {
 		font-weight: 400;
 		font-size: 48px;
+		@include adaptiv-font(48, 32);
 		line-height: calc(56 / 48 * 100%);
 		color: #fff;
 	}

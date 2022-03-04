@@ -131,12 +131,15 @@
 	.vertex__title {
 		text-align: center;
 	}
-	.gallery__numbers{
+	.gallery__numbers {
 		flex-wrap: wrap;
 	}
 	.gallery__numbers-item {
 		flex: 0 1 50%;
 		margin-bottom: 30px;
+	}
+	.slider-blog__item {
+		margin-right: auto;
 	}
 }
 //========================================================================================
@@ -165,6 +168,9 @@
 			grid-column: span 1;
 			grid-row: span 1;
 		}
+	}
+	.slider-blog__item {
+		max-width: 100%;
 	}
 }
 //========================================================================================
