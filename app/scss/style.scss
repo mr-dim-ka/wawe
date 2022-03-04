@@ -320,6 +320,7 @@
 	&__title {
 		@include adaptiv-value("margin-bottom", 100, 30, 0);
 		text-align: left;
+		padding-right: 20px;
 	}
 
 	// .vertex__text
@@ -414,7 +415,7 @@
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: repeat(2, 1fr);
-		grid-gap: 40px;
+		@include adaptiv-value("grid-gap", 40, 10, 0);
 		margin-bottom: 50px;
 	}
 
@@ -450,10 +451,13 @@
 	// .gallery__link
 
 	&__link {
-		margin-bottom: 200px;
-		padding: 25px 90px;
+		@include adaptiv-value("margin-bottom", 200, 40, 0);
+		@include adaptiv-font(24, 20);
+		padding: 0 90px;
+		@include adaptiv-value("padding-top", 25, 15, 0);
+		@include adaptiv-value("padding-bottom", 25, 15, 0);
 		border: 1px solid #c4c4c4;
-		font-size: 24px;
+		line-height: calc(30 / 24 * 100%);
 		font-weight: 400;
 		text-transform: uppercase;
 		color: $color-text;
@@ -472,6 +476,7 @@
 		justify-content: center;
 		align-items: center;
 		margin-bottom: 200px;
+		@include adaptiv-value("margin-bottom", 200, 70, 0);
 	}
 
 	// .gallery__video-link
@@ -497,7 +502,7 @@
 		font-size: 64px;
 		line-height: calc(75 / 64 * 100%);
 		color: $color-title;
-		margin: 0 50px 5px;
+		flex: 0 1 25%;
 
 		span {
 			display: block;
@@ -510,8 +515,10 @@
 }
 .blockquote {
 	background-color: #f8f8f8;
-	padding: 80px 0 60px;
-	margin-bottom: 200px;
+	padding: 0 15px;
+	@include adaptiv-value("padding-top", 80, 50, 0);
+	@include adaptiv-value("padding-bottom", 60, 50, 0);
+	@include adaptiv-value("margin-bottom", 200, 50, 0);
 
 	// .blockquote__text
 
@@ -521,7 +528,7 @@
 		text-align: center;
 		font-style: italic;
 		font-weight: 400;
-		font-size: 36px;
+		@include adaptiv-font(36, 30);
 		line-height: calc(40 / 36 * 100%);
 		color: $color-text;
 	}

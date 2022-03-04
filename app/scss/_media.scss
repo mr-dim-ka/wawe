@@ -1,4 +1,8 @@
-@media (max-width: 1023px) {
+@media (max-width: 992px) {
+	.blockquote__author {
+		margin: 0 0 0 auto;
+		transform: translateX(0%);
+	}
 }
 //========================================================================================
 @media (max-width: 830px) {
@@ -94,10 +98,7 @@
 	}
 }
 //========================================================================================
-@media (max-width: 767px) {
-	.header__title {
-		// font-size: 150px;
-	}
+@media (max-width: 768px) {
 	.get__items {
 		display: block;
 	}
@@ -127,28 +128,84 @@
 	.get__info {
 		margin-bottom: 30px;
 	}
-	.vertex__title{
+	.vertex__title {
 		text-align: center;
+	}
+	.gallery__numbers{
+		flex-wrap: wrap;
+	}
+	.gallery__numbers-item {
+		flex: 0 1 50%;
+		margin-bottom: 30px;
 	}
 }
 //========================================================================================
-@media (max-width: 639px) {
+@media (max-width: 640px) {
 	.about__items {
 		display: block;
 	}
+	.gallery__btn {
+		display: block;
+		margin-bottom: 20px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.gallery__items {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: none;
+	}
+	.gallery__item {
+		&:first-child {
+			grid-column: span 1;
+			grid-row: span 1;
+		}
+
+		&:last-child {
+			grid-column: span 1;
+			grid-row: span 1;
+		}
+	}
 }
 //========================================================================================
-@media (max-width: 479px) {
+@media (max-width: 540px) {
+	.gallery__items {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.gallery__item {
+		grid-column: span 1;
+		grid-row: span 1;
+	}
+	.blockquote__text {
+		max-width: 100%;
+	}
+	.blockquote__author {
+		margin: 10px auto 0;
+	}
+}
+//========================================================================================
+@media (max-width: 480px) {
 	.header__inner {
 		padding: 10px 0px;
-
-		&.active {
-		}
 	}
 	.header__subtitle {
 		text-align: center;
 	}
 	.header__icon {
 		margin-bottom: 60px;
+	}
+	.gallery__numbers-item {
+		flex: 0 1 100%;
+	}
+}
+//========================================================================================
+@media (max-width: 375px) {
+	.gallery__items {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.gallery__link {
+		width: 100%;
+		padding-right: 0;
+		padding-left: 0;
 	}
 }
