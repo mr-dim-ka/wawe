@@ -372,8 +372,6 @@
 //========================================================================================
 
 .gallery {
-	@include adaptiv-value("padding-bottom", 200, 45, 0);
-
 	// .gallery__title
 
 	&__title {
@@ -547,7 +545,7 @@
 //========================================================================================
 
 .blog {
-	@include adaptiv-value("padding-bottom", 200, 45, 0);
+	@include adaptiv-value("padding-top", 200, 45, 0);
 
 	// .blog__title
 
@@ -633,7 +631,7 @@
 //========================================================================================
 
 .team {
-	@include adaptiv-value("padding-bottom", 200, 45, 0);
+	@include adaptiv-value("padding-top", 200, 45, 0);
 
 	// .team__title
 
@@ -761,7 +759,6 @@
 
 .map {
 	@include adaptiv-value("padding-top", 200, 50, 0);
-	@include adaptiv-value("padding-bottom", 200, 50, 0);
 	// .map__images
 
 	&__images {
@@ -777,6 +774,7 @@
 //========================================================================================
 
 .connection {
+	@include adaptiv-value("padding-top", 200, 50, 0);
 	@include adaptiv-value("padding-bottom", 200, 45, 0);
 
 	// .connection__title

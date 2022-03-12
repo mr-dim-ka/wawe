@@ -1604,10 +1604,6 @@ body {
   margin-bottom: 30px;
 }
 
-.gallery {
-  padding-bottom: calc(45px + 155 * ((100vw - 320px) / 1600));
-}
-
 .gallery__title {
   margin-bottom: calc(50px + 160 * ((100vw - 320px) / 1600));
 }
@@ -1757,7 +1753,7 @@ body {
 }
 
 .blog {
-  padding-bottom: calc(45px + 155 * ((100vw - 320px) / 1600));
+  padding-top: calc(45px + 155 * ((100vw - 320px) / 1600));
 }
 
 .blog__title {
@@ -1827,7 +1823,7 @@ body {
 }
 
 .team {
-  padding-bottom: calc(45px + 155 * ((100vw - 320px) / 1600));
+  padding-top: calc(45px + 155 * ((100vw - 320px) / 1600));
 }
 
 .team__title {
@@ -1949,7 +1945,6 @@ body {
 
 .map {
   padding-top: calc(50px + 150 * ((100vw - 320px) / 1600));
-  padding-bottom: calc(50px + 150 * ((100vw - 320px) / 1600));
 }
 
 .map__img {
@@ -1957,6 +1952,7 @@ body {
 }
 
 .connection {
+  padding-top: calc(50px + 150 * ((100vw - 320px) / 1600));
   padding-bottom: calc(45px + 155 * ((100vw - 320px) / 1600));
 }
 
@@ -2227,7 +2223,7 @@ body {
   }
 
   .header__inner {
-    padding: 20px 0;
+    padding: 0;
     -webkit-transition: all 0.5s ease 0s;
     -o-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
@@ -2236,7 +2232,7 @@ body {
   .header__inner.active {
     background-color: rgba(0, 178, 160, 0.9);
     margin: 0 -15px;
-    padding: 10px 15px;
+    padding: 0px 15px;
   }
 
   .logo {
@@ -2321,7 +2317,7 @@ body {
   }
 
   .header__menu.active {
-    top: 83px;
+    top: 63px;
   }
 
   .menu__list {
@@ -2516,10 +2512,6 @@ body {
 }
 
 @media (max-width: 480px) {
-  .header__inner {
-    padding: 10px 0px;
-  }
-
   .header__subtitle {
     text-align: center;
   }

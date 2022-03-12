@@ -12,12 +12,12 @@
 		}
 	}
 	.header__inner {
-		padding: 20px 0;
+		padding: 0;
 		transition: all 0.5s ease 0s;
 		&.active {
 			background-color: rgba($green, 0.9);
 			margin: 0 -15px;
-			padding: 10px 15px;
+			padding: 0px 15px;
 		}
 	}
 	.logo {
@@ -83,7 +83,7 @@
 		background-color: rgba($color-title, 0.9);
 		transition: all 0.5s ease 0s;
 		&.active {
-			top: 83px;
+			top: 63px;
 		}
 	}
 	.menu__list {
@@ -221,9 +221,6 @@
 }
 //========================================================================================
 @media (max-width: 480px) {
-	.header__inner {
-		padding: 10px 0px;
-	}
 	.header__subtitle {
 		text-align: center;
 	}
